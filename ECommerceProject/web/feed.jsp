@@ -283,11 +283,11 @@
         <b>Số điện thoại:</b>  <input type="text" name="fono"><br>
         <b>Email:</b>  <input type="text" name="mail"><br>
         <b>Bạn đã mua sản phẩm nào của E-commerce ?</b> <br>
-        <input type="radio" name="use" value="phone">Điện thoại<br>
-        <input type="radio" name="use" value="tablet">Máy tính bảng <br>
-        <input type="radio" name="use" value="tv">TV <br>
-        <input type="radio" name="use" value="lap">Máy tính xách tay<br>
-        <input type="radio" name="use" value="none">Tôi chưa mua hàng ở E-commerce <br> 
+        <input type="radio" name="use" value="phone">  Điện thoại<br>
+        <input type="radio" name="use" value="tablet">  Máy tính bảng <br>
+        <input type="radio" name="use" value="tv">  TV <br>
+        <input type="radio" name="use" value="lap">  Máy tính xách tay<br>
+        <input type="radio" name="use" value="none">  Tôi chưa mua hàng ở E-commerce <br> 
         <b>Bạn muốn nhận xét về mục nào?</b> 
         <select name="sub">
             <option value="gen">Tổng quát về E-commerce</option>
