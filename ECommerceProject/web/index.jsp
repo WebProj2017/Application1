@@ -606,9 +606,9 @@
                 <ul>
                     <li><a href="error.jsp"><%=map.get("sitemap")%></a></li>						
                     <li><a href="error.jsp"><%=map.get("footer.control")%></a></li>
-                    <li><a href="error.jspl">FAQ</a></li>
-                    <li><a href="error.jsp"><%=map.get("feed")%></a></li>
-                    <li><a href="error.jsp"><%=map.get("contact")%></a></li>
+                    <li><a href="FAQ.jspl">FAQ</a></li>
+                    <li><a href="feedback.jsp"><%=map.get("feed")%></a></li>
+                    <li><a href="contact.jsp"><%=map.get("contact")%></a></li>
                     <li><a href="error.jsp">Code</a></li>
                 </ul>
             </div>
