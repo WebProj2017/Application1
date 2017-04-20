@@ -16,24 +16,24 @@ import javax.servlet.http.HttpServletResponse;
 public class LaptopAPI extends HttpServlet {
 
     public static final String LAPTOP_JSON_STRING = "{\"products\":["
-            + "{\"productId\":\"lap1\",\"productName\":\"ACER AS ES1-572-388E\","
-            + "\"productPrice\":650.0,\"supplierId\":\"S001\","
-            + "\"info\":\"/WebProviders/images/ACERASES1-572-388E.jpg\"},"
-            + "{\"productId\":\"lap2\",\"productName\":\"Macbook Air 13 MMGF2ZP/A\","
+            + "{\"productId\":\"lap1\",\"productName\":\"Microsoft Surface Book\","
             + "\"productPrice\":850.0,\"supplierId\":\"S001\","
-            + "\"info\":\"/WebProviders/images/MacbookAir13MMGF2ZPA.png\"},"
-            + "{\"productId\":\"lap3\",\"productName\":\"Dell Ins N7566A\","
+            + "\"info\":\"/WebProviders/images/MSBook.jpg\"},"
+            + "{\"productId\":\"lap2\",\"productName\":\"Macbook Pro Retina 2016 Touchbar\","
+            + "\"productPrice\":1250.0,\"supplierId\":\"S001\","
+            + "\"info\":\"/WebProviders/images/MBP2016.jpeg\"},"
+            + "{\"productId\":\"lap3\",\"productName\":\"Dell XPS 13\","
             + "\"productPrice\":750.0,\"supplierId\":\"S001\","
-            + "\"info\":\"/WebProviders/images/DellInsN7566A.png\"},"
-            + "{\"productId\":\"lap4\",\"productName\":\"Asus K401LB-FR119D\","
+            + "\"info\":\"/WebProviders/images/xps13.jpq\"},"
+            + "{\"productId\":\"lap4\",\"productName\":\"HP EliteBook\","
             + "\"productPrice\":550.0,\"supplierId\":\"S001\","
-            + "\"info\":\"/WebProviders/images/AsusK401LB-FR119D.jpg\"},"
-            + "{\"productId\":\"lap5\",\"productName\":\"HP ProBook 450 G3\","
-            + "\"productPrice\":600.0,\"supplierId\":\"S001\","
-            + "\"info\":\"/WebProviders/images/HPProBook450G3.jpg\"},"
-            + "{\"productId\":\"lap6\",\"productName\":\"MSI GL72 6QF-807XVN\","
-            + "\"productPrice\":680.0,\"supplierId\":\"S001\","
-            + "\"info\":\"/WebProviders/images/MSIGL726QF-807XVN.jpg\"}]}";
+            + "\"info\":\"/WebProviders/images/elite.jpg\"},"
+            + "{\"productId\":\"lap5\",\"productName\":\"Asus Zenbook\","
+            + "\"productPrice\":450.0,\"supplierId\":\"S001\","
+            + "\"info\":\"/WebProviders/images/zenbook.jpg\"},"
+            + "{\"productId\":\"lap6\",\"productName\":\"Samsung Notebook 9\","
+            + "\"productPrice\":850.0,\"supplierId\":\"S001\","
+            + "\"info\":\"/WebProviders/images/note9.jpg\"}]}";
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
