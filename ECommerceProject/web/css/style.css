@@ -1,7 +1,8 @@
 
 body{
-	background: #fff;
+	background: #ffffff;
 	font-family: 'Open Sans', sans-serif;
+        color: #000000;
 }
 body a{
 	transition: 0.5s all;
@@ -11,7 +12,7 @@ body a{
 	-moz-transition: 0.5s all;
 }
 .top-header{
-	background: #009973;
+	background: #0f065a;
 	padding: 0.7em 0;
 }
 .top-header-left{
@@ -65,7 +66,7 @@ ul.support li a:hover {
 .bottom-header {
 	border-bottom: 1px solid #ddd;
 	padding: 0.7em 0 1em;
-        background:  #003366;
+        background:  #4d4e4e;
 }
 .header-bottom-left{
 	float: left;
@@ -1034,7 +1035,7 @@ a.forgot {
 }
 /*--footer--*/
 .footer-top1{
-	background: #e6e6e6;
+	background: #0f1c52;
 	margin: 10px;
 }
 .latter{
@@ -1169,7 +1170,7 @@ ul.face-in-to li a span.facebook-in{
 }
 .footer-top {
     padding: 10px 0;
-    background: #3c3d41;
+    background: #0f065a;
 }
 .footer-bottom p {
     margin: 20px 0 0 0;
@@ -1182,7 +1183,7 @@ ul.face-in-to li a span.facebook-in{
 }
 h4.footer-head {
     font-size: 28px;
-    color: #00ffbf;
+    color: #ffffff;
     margin-bottom: 16px;
 }
 .footer-grid p {
