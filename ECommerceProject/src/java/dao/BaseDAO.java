@@ -1,6 +1,7 @@
 package dao;
 
 import annotation.Transaction;
+import com.mysql.cj.core.util.StringUtils;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
@@ -59,7 +60,7 @@ public class BaseDAO {
     }
 
     @Transaction
-    public static List<Account> getAllAccount() {
+    public static List<Account> getAllAccount() throws SQLException {
         List<Account> accounts = new ArrayList<>();
         /*try {
             ResultSet rs = coreExeTransaction("SELECT * FROM account");
@@ -81,8 +82,19 @@ public class BaseDAO {
         }*/
         
         DataProvider.open();
-        DataProvider.query("SELECT * FROM account");
-        ResultSet rs 
+        ResultSet rs = DataProvider.query("SELECT * FROM account");
+        while (rs.next()) {
+                accounts.add(new Account(rs.getString("accid"),
+                        rs.getString("accname"),
+                        rs.getString("accpassword"),
+                        rs.getString("accemail"),
+                        rs.getString("accaddress"),
+                        Activation.valueOf(rs.getString("accactivate")),
+                        UserRole.valueOf(rs.getString("accrole")),
+                        rs.getString("accdate")
+                ));
+            }
+
          DataProvider.close();
         return accounts;
     }
@@ -283,6 +295,18 @@ public class BaseDAO {
             coreUpdateTransaction(sqlQuery);
         } catch (SQLException | ClassNotFoundException e) {
         }
+    }
+    
+    @Transaction
+    public static Boolean checkEmailIsExists(String email) throws SQLException{
+        DataProvider.open();
+        if(!StringUtils.isNullOrEmpty(email)){
+             ResultSet rs = DataProvider.query("SELECT accid FROM account WHERE accemail = ?", email);
+            if(rs.next()){
+                return true;
+            }
+        }
+        return false;
     }
     
 }

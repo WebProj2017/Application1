@@ -239,6 +239,12 @@
 
 <script type="text/javascript">
 
+    $(document).ready(function(){
+        $("#reg-email").blur(function(){
+            checkEmailInExists();
+        });
+    });
+    
     function registerValidate() {
 
         var username = document.getElementById("reg-username").value;
@@ -270,10 +276,28 @@
             document.getElementById("repass-error").innerHTML = '<%=map.get("reg.repasserr")%>';
             return false;
         }
-
-        return true;
+        
+        return checkEmailInExists();
     }
-
+    
+    function checkEmailInExists(){
+        var email = $("#reg-email").val();
+	$.ajax({
+            url: 'ajaxcheckemail',
+            type: 'GET',
+            contentType: 'application/json',
+            data: {"email" : email},
+            success: function (res) {
+                if(res){
+                       $("#email-error").html('Email đã tồn tại trong database');
+                       return false;
+                }
+                
+                return true;
+            }
+	});
+    }
+       
 
 </script>
 <!---->

@@ -30,13 +30,12 @@ public class DataProvider {
 				cnn.close();
 			}
 			
-			cnn = DriverManager.getConnection("jdbc:mysql://localhost:3306/" 
-			+ nameServer + "?useUnicode=true&characterEncoding=utf-8",pro);
+			cnn = DriverManager.getConnection(nameServer,pro);
 		} catch (Exception e) {
 			// TODO: handle exception
 			e.printStackTrace();
 		}
-	}
+	}   
 	
         @Transaction
 	public static ResultSet query(String sql, Object... params){
