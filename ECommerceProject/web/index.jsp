@@ -60,7 +60,8 @@
                     <div class="top-header-right">
                         <ul class="support">
                             <li><a href="language?lang=vi">Tiếng Việt</a><a href="#">|</a> 
-                            <li><a href="language?lang=en">English</a>
+                            <li><a href="language?lang=en">English</a><a href="#"></a>
+                            <li><a href="language?lang=ja">日本語</a>
                         </ul>        
                     </div>
                 </div>

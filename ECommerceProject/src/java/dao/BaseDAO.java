@@ -16,6 +16,7 @@ import model.OrderType;
 import model.Product;
 import model.UserRole;
 import util.Constant;
+import util.DataProvider;
 import util.JsonBinder;
 
 /**
@@ -60,7 +61,7 @@ public class BaseDAO {
     @Transaction
     public static List<Account> getAllAccount() {
         List<Account> accounts = new ArrayList<>();
-        try {
+        /*try {
             ResultSet rs = coreExeTransaction("SELECT * FROM account");
 
             while (rs.next()) {
@@ -77,8 +78,12 @@ public class BaseDAO {
 
             getConnection().close();
         } catch (SQLException | ClassNotFoundException e) {
-        }
-
+        }*/
+        
+        DataProvider.open();
+        DataProvider.query("SELECT * FROM account");
+        ResultSet rs 
+         DataProvider.close();
         return accounts;
     }
 
