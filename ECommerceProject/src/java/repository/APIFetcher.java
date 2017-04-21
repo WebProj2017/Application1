@@ -20,7 +20,7 @@ public class APIFetcher {
     private static String fetch(String fetchURL) {
         StringBuilder response = new StringBuilder("");
         try {
-            String urlFetch = "http://localhost:8/WebProviders" + fetchURL;
+            String urlFetch = "http://localhost:8080/WebProviders" + fetchURL;
             //String urlFetch = "http://localhost:" + Constant.getServerPort() +  "/WebProviders" + fetchURL;
             URL url = new URL(urlFetch);
             HttpURLConnection uRLConnection = (HttpURLConnection) url.openConnection();

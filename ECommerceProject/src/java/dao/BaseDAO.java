@@ -17,9 +17,8 @@ import model.OrderType;
 import model.Product;
 import model.UserRole;
 import util.Constant;
-import util.DataProvider;
 import util.JsonBinder;
-
+import util.DataProvider;
 /**
  *
  * @author IU-CSE Team
@@ -60,9 +59,9 @@ public class BaseDAO {
     }
 
     @Transaction
-    public static List<Account> getAllAccount() throws SQLException {
+    public static List<Account> getAllAccount() {
         List<Account> accounts = new ArrayList<>();
-        /*try {
+        try {
             ResultSet rs = coreExeTransaction("SELECT * FROM account");
 
             while (rs.next()) {
@@ -79,23 +78,8 @@ public class BaseDAO {
 
             getConnection().close();
         } catch (SQLException | ClassNotFoundException e) {
-        }*/
-        
-        DataProvider.open();
-        ResultSet rs = DataProvider.query("SELECT * FROM account");
-        while (rs.next()) {
-                accounts.add(new Account(rs.getString("accid"),
-                        rs.getString("accname"),
-                        rs.getString("accpassword"),
-                        rs.getString("accemail"),
-                        rs.getString("accaddress"),
-                        Activation.valueOf(rs.getString("accactivate")),
-                        UserRole.valueOf(rs.getString("accrole")),
-                        rs.getString("accdate")
-                ));
-            }
+        }
 
-         DataProvider.close();
         return accounts;
     }
 
@@ -296,7 +280,6 @@ public class BaseDAO {
         } catch (SQLException | ClassNotFoundException e) {
         }
     }
-    
     @Transaction
     public static Boolean checkEmailIsExists(String email) throws SQLException{
         DataProvider.open();

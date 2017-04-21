@@ -15,7 +15,7 @@ import javax.servlet.http.HttpServletResponse;
 @WebServlet("/Series3API")
 public class Series3API extends HttpServlet {
 
-    public static final String SERIES_3 = "{\"products\":["
+    public static final String SERIES3_JSON_STRING = "{\"products\":["
             + "{\"productId\":\"320i\",\"productName\":\"BMW 320i\","
             + "\"productPrice\":38.000,\"supplierId\":\"S004\","
             + "\"info\":\"/WebProviders/images/320i.jpeg\"},"
@@ -27,7 +27,7 @@ public class Series3API extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws IOException, ServletException {
         PrintWriter out = response.getWriter();
-        out.print(SERIES_3);
+        out.print(SERIES3_JSON_STRING);
     }
 
 }

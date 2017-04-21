@@ -35,5 +35,11 @@ public class Initializer {
 
         return products.getProducts();
     }
+    
+    public static List<Product> getSeries3()    {
+        Products products = (Products) GSON.fromJson(Series3API.SERIES3_JSON_STRING, Products.class);
+        
+        return products.getProducts();
+    }
 
 }
