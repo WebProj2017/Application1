@@ -2,6 +2,7 @@ package dao;
 
 import annotation.Transaction;
 import com.mysql.cj.core.util.StringUtils;
+import controller.GetFeed;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
@@ -16,9 +17,11 @@ import model.Category;
 import model.OrderType;
 import model.Product;
 import model.UserRole;
+import model.Feed;
 import util.Constant;
 import util.JsonBinder;
 import util.DataProvider;
+
 /**
  *
  * @author IU-CSE Team
@@ -292,4 +295,30 @@ public class BaseDAO {
         return false;
     }
     
+    
+   /* @Transaction
+    public static void updateFeed(Feed feed)
+    {
+        
+        try {
+            String sqlQuery = "INSERT INTO ecmrproj.`RequestForm`"
+                    + "(requestID, Name, PhoneNo, Email, Interested, IssueCode, Contain)"
+                    + " VALUES ('" + GetFeed.name()
+                    + "','" + request.getParameter("fonoF")
+                    + "','" + request.getParameter("mailF")
+                    + "','" + orderDAO.getOrderAddress()
+                    + "','" + orderDAO.getOrderPhone()
+                    + "','" + orderDAO.getOrderDate()
+                    + "','" + String.valueOf(orderDAO.getTotalCost())
+                    + "','" + orderDAO.getCardid()
+                    + "','" + orderDAO.getOrderform()
+                    + "','" + orderDAO.getOrdertype()
+                    + "')";
+
+            coreUpdateTransaction(sqlQuery);
+        } catch (SQLException | ClassNotFoundException e) {
+
+        }
+    }
+    */
 }
