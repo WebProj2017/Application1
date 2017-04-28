@@ -287,7 +287,7 @@
                 <div class="row">
                     <h1><%=map.get("phone.title")%></h1>
                     <%
-                        List<Product> productsByCate = APIFetcher.fetcher("/Series3API");
+                        List<Product> productsByCate = APIFetcher.fetcher("/series3Api");
 
                         for (Product product : productsByCate) {%>
                     <div class="col-md-6" style="border: 1px solid  #bfbfbf;">

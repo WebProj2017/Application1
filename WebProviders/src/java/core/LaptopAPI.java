@@ -34,6 +34,7 @@ public class LaptopAPI extends HttpServlet {
             + "{\"productId\":\"lap6\",\"productName\":\"Samsung Notebook 9\","
             + "\"productPrice\":850.0,\"supplierId\":\"S001\","
             + "\"info\":\"/WebProviders/images/note9.jpg\"}]}";
+            
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)

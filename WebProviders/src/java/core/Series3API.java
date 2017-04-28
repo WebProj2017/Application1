@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author IU-CSE Team
  */
-@WebServlet("/Series3API")
+@WebServlet("/series3Api")
 public class Series3API extends HttpServlet {
 
     public static final String SERIES3_JSON_STRING = "{\"products\":["
@@ -20,7 +20,8 @@ public class Series3API extends HttpServlet {
             + "\"productPrice\":38.000,\"supplierId\":\"S004\","
             + "\"info\":\"/WebProviders/images/320i.jpeg\"},"
             + "{\"productId\":\"330i\",\"productName\":\"BMW 330i\","
-            + "\"productPrice\":46.000,\"supplierId\":\"S004\",";
+            + "\"productPrice\":46.000,\"supplierId\":\"S004\","
+            + "\"info\":\"/WebProviders/images/330i.jpeg\"},";
             
 
     @Override
