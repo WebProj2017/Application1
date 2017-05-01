@@ -278,7 +278,7 @@
 <!---->
 <div class="container">
     <h3><b>Form nhận ý kiến phản hồi từ khách hàng</b> </h3>
-    <form action ="/src/java/dao/BaseDAO.java" method = "get"></a>
+    <form action ="${pageContext.request.contextPath}/GetFeed" method = "get"></a>
 ">
         <b>Họ và tên:</b>  <input type="text" name="nameF"><br>
         <b>Số điện thoại:</b>  <input type="text" name="fonoF"><br>

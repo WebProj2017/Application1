@@ -1,5 +1,6 @@
 package controller;
 
+import dao.BaseDAO;
 import java.io.IOException;
 import static java.lang.System.out;
 import javax.servlet.ServletException;
@@ -7,6 +8,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import model.Feed;
 import repository.AccountRepository;
 import util.Encript;
 import util.Settings;
@@ -32,7 +34,7 @@ public class GetFeed extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-      
+        request.setCharacterEncoding("UTF-8"); 
         
         String name =request.getParameter("nameF");
         String phone=request.getParameter("fonoF");
@@ -40,6 +42,9 @@ public class GetFeed extends HttpServlet {
         String Interested =request.getParameter("use");
         String Issuecode = request.getParameter("sub");
         String contain = request.getParameter("feed");
+        
+        Feed feed = new Feed(null, name, phone, mail, Interested, Issuecode, contain);
+        BaseDAO.updateFeed(feed);
         Settings.removeWebUserSession(request);
         out.println("<h2>YOUR SUBMIT HAS BEEN RECORDED");
         response.sendRedirect("index.jsp");
