@@ -4,6 +4,7 @@
 <!DOCTYPE HTML>
 <html>
     <head>
+        <link rel="icon" href="images/BMW.ico">
         <title>404</title>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
         <link href='http://fonts.googleapis.com/css?family=Love+Ya+Like+A+Sister' rel='stylesheet' type='text/css'>

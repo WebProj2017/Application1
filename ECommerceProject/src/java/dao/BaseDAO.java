@@ -196,13 +196,13 @@ public class BaseDAO {
     @Transaction
     public static void insertProduct(Product product) {
         try {
-           
+
             String sqlQuery = "INSERT INTO ecmrproj.`product`"
                     + "(productid, productname, productprice, supplierid, info)"
                     + " VALUES ('" + product.getProductId()
                     + "','" + product.getProductName()
                     + "'," + product.getProductPrice()
-                    + ",'" + product.getSupplierId() 
+                    + ",'" + product.getSupplierId()
                     + "','" + product.getInfo() + "')";
 
             coreUpdateTransaction(sqlQuery);
@@ -226,7 +226,7 @@ public class BaseDAO {
 
     @Transaction
     public static void updateProduct(Product product) {
-        try {           
+        try {
             String sqlQuery = "UPDATE ecmrproj.`product`"
                     + "SET productname='" + product.getProductName()
                     + "', productprice=" + product.getProductPrice()
@@ -284,23 +284,22 @@ public class BaseDAO {
         } catch (SQLException | ClassNotFoundException e) {
         }
     }
+
     @Transaction
-    public static Boolean checkEmailIsExists(String email) throws SQLException{
+    public static Boolean checkEmailIsExists(String email) throws SQLException {
         DataProvider.open();
-        if(!StringUtils.isNullOrEmpty(email)){
-             ResultSet rs = DataProvider.query("SELECT accid FROM account WHERE accemail = ?", email);
-            if(rs.next()){
+        if (!StringUtils.isNullOrEmpty(email)) {
+            ResultSet rs = DataProvider.query("SELECT accid FROM account WHERE accemail = ?", email);
+            if (rs.next()) {
                 return true;
             }
         }
         return false;
     }
-    
-    
+
     @Transaction
-    public static void updateFeed(Feed feed)
-    {
-        
+    public static void updateFeed(Feed feed) {
+
         try {
             String sqlQuery = "INSERT INTO ecmrproj.`RequestForm`"
                     + "(Name, PhoneNo, Email, Interested, IssueCode, Contain)"
@@ -309,12 +308,12 @@ public class BaseDAO {
                     + "','" + feed.getEmail()
                     + "','" + feed.getInterested()
                     + "','" + feed.getIssue()
-                    + "','" + feed.getContain()                                   
+                    + "','" + feed.getContain()
                     + "')";
 
             coreUpdateTransaction(sqlQuery);
         } catch (SQLException | ClassNotFoundException e) {
-                e.printStackTrace();
+            e.printStackTrace();
         }
     }
 }

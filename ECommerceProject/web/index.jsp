@@ -24,6 +24,7 @@
 %>
 <html>
     <head>
+        <link rel="icon" href="images/BMW.ico">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="ContentType" content="text/html" charset="utf-8"/>
         <title><%=map.get("title")%></title>
@@ -75,7 +76,8 @@
         <div class="container">
             <div class="col-sm-3 header-bottom-left">
                 <div class="logo">
-                    <a href="index.jsp">E-<span>COMMERCE</span></a>
+                    <a href="index.jsp"><img src="images/BMWLogo.jpeg" alt=""/></a>
+                    
                 </div>
                 <div class="search">
                     <input type="text" value="" placeholder="<%=map.get("place_holder")%>" 
@@ -496,16 +498,15 @@
         <div class=" top-nav rsidebar span_1_of_left">
             <h3 class="cate"><%=map.get("cate")%></h3>
             <ul class="menu">
-                <li class="item1"><a href="error.jsp"><%=map.get("electronic")%></a>
+                <li class="item1"><a href="#"><%=map.get("sedan")%></a>
                     <ul class="cute">
-                        <li class="subitem1"><a href="phone.jsp"><%=map.get("phone")%></a></li>
-                        <li class="subitem2"><a href="laptop.jsp">Laptop</a></li>
-                        <li class="subitem3"><a href="tablet.jsp"><%=map.get("ipad")%></a></li>
-                        <li class="subitem4"><a href="television.jsp"><%=map.get("tv")%></a></li>
-                        <li class="subitem5"><a href="error.jsp"><%=map.get("camera")%></a></li>
+                        <li class="subitem1"><a href="series3.jsp">3 Series </a></li>
+                        <li class="subitem2"><a href="series5.jsp">5 Series </a></li>
+                        <li class="subitem3"><a href="series7.jsp">7 Series </a></li>
+                        <li class="subitem4"><a href="seriesm.jsp">Dòng M hiệu năng cao</a></li>                       
                     </ul>
                 </li>
-                <li class="item2"><a href="error.jsp"><%=map.get("clothes")%></a>
+                <li class="item2"><a href="#"><%=map.get("suv")%></a>
                     <ul class="cute">
                         <li class="subitem1"><a href="error.jsp"><%=map.get("men")%></a></li>
                         <li class="subitem2"><a href="error.jsp"><%=map.get("women")%></a></li>
@@ -657,7 +658,7 @@
                 </ul>	
                 <ul class="location">
                     <li><span class="glyphicon glyphicon-earphone"></span></li>
-                    <li><a href="error.jsp">+0 561 111 235</a></li>
+                    <li><a href="error.jsp">0165 921 1734</a></li>
                     <div class="clearfix"></div>
                 </ul>	
                 <ul class="location">

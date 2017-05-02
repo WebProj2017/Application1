@@ -27,6 +27,7 @@
 %>
 <html>
     <head>
+        <link rel="icon" href="images/BMW.ico">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="ContentType" content="text/html" charset="utf-8"/>
         <title><%=map.get("title")%></title>
@@ -423,7 +424,7 @@
         <div class=" top-nav rsidebar span_1_of_left">
             <h3 class="cate"><%=map.get("cate")%></h3>
             <ul class="menu">
-                <li class="item1"><a href="error.jsp"><%=map.get("electronic")%></a>
+                <li class="item1"><a href="error.jsp"><%=map.get("sedan")%></a>
                     <ul class="cute">
                         <li class="subitem1"><a href="phone.jsp"><%=map.get("phone")%></a></li>
                         <li class="subitem2"><a href="laptop.jsp">Laptop</a></li>
@@ -584,7 +585,7 @@
                 </ul>	
                 <ul class="location">
                     <li><span class="glyphicon glyphicon-earphone"></span></li>
-                    <li><a href="error.jsp">+0 561 111 235</a></li>
+                    <li><a href="error.jsp">0165 921 1734</a></li>
                     <div class="clearfix"></div>
                 </ul>	
                 <ul class="location">
