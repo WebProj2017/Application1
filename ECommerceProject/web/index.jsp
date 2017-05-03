@@ -304,22 +304,22 @@
 <!---->
 <div class="container">
     <div class="shoes-grid">
-        <a href="#">
+        
             <div class="wrap-in">
                 <div class="wmuSlider example1 slide-grid">		 
                     <div class="wmuSliderWrapper">		  
                         <article style="position: absolute; width: 100%; opacity: 0;">					
                             <div class="banner-matter">
                                 <div class="col-md-5 banner-bag">
-                                    <img class="img-responsive " src="images/P001.png" alt=" " />
+                                    <img class="img-responsive " src="images/P001.jpg"alt=" " />
                                 </div>
                                 <div class="col-md-7 banner-off">							
                                     <h2><%=map.get("sales")%> 50%</h2>
                                     <label><%=map.get("all")%></label>
-                                    <p><%=map.get(products.get(0).getProductName())%></p>					
+                                    <p>BMW 320i</p>					
                                     <a href="view.jsp?productId=<%=products.get(0).getProductId()%>">
                                         <span class="on-get"><%=map.get("get")%></span>
-                                    </a>
+                                   
                                 </div>
 
                                 <div class="clearfix"> </div>
@@ -334,7 +334,7 @@
                                 <div class="col-md-7 banner-off">							
                                     <h2><%=map.get("sales")%> 50%</h2>
                                     <label><%=map.get("all")%></label>
-                                    <p><%=map.get(products.get(1).getProductName())%></p>					
+                                    <p>BMW 330i</p>					
                                     <a href="view.jsp?productId=<%=products.get(1).getProductId()%>">
                                         <span class="on-get"><%=map.get("get")%></span>
                                     </a>
@@ -352,7 +352,7 @@
                                 <div class="col-md-7 banner-off">							
                                     <h2><%=map.get("sales")%> 50%</h2>
                                     <label><%=map.get("all")%></label>
-                                    <p><%=map.get(products.get(2).getProductName())%></p>					
+                                    <p>BMW 520d</p>
                                     <a href="view.jsp?productId=<%=products.get(2).getProductId()%>">
                                         <span class="on-get"><%=map.get("get")%></span>
                                     </a>
@@ -382,7 +382,7 @@
             <a href="view.jsp?productId=<%=products.get(3).getProductId()%>">				 
                 <div class="col-md-6 con-sed-grid">
                     <div class=" elit-grid">
-                        <h4><%=map.get(products.get(3).getProductName())%></h4><br>
+                        <h4>BMW 530i</h4><br>
                         <p><%=map.get("nike.detail")%></p>
                         <span class="on-get"><%=map.get("get")%></span>
                     </div>						
@@ -393,7 +393,7 @@
             <a href="view.jsp?productId=<%=products.get(4).getProductId()%>">	
                 <div class="col-md-6 con-sed-grid sed-left-top">
                     <div class=" elit-grid"> 
-                        <h4><%=map.get(products.get(4).getProductName())%></h4><br>
+                        <h4>BMW 730Li</h4><br>
                         <p><%=map.get("rest.detail")%></p>
                         <span class="on-get"><%=map.get("get")%></span>
                     </div>		
@@ -407,16 +407,16 @@
         </div>
         <div class="product-left">
             <div class="col-md-4 chain-grid">
-                <a href="view.jsp?productId=<%=products.get(5).getProductId()%>"><img class="img-responsive chain" src="images/P006.jpg" alt=" " /></a>
+                <a href="view.jsp?productId=<%=products.get(5).getProductId()%>"><img class="img-responsive chain" src="images/P005.jpg" alt=" " /></a>
                 <span class="star"> </span>
                 <div class="grid-chain-bottom">
-                    <h6><a href="view.jsp?productId=<%=products.get(5).getProductId()%>">
-                            <%=map.get(products.get(5).getProductName())%>
+                    <h6><a href="#">
+                            BMW 740Li
                         </a></h6>
                     <div class="star-price">
                         <div class="dolor-grid"> 
-                            <span class="actual">800<%=map.get("money")%></span>
-                            <span class="reducedfrom">1200<%=map.get("money")%></span>
+                            <span class="actual">5.250.000.000<%=map.get("money")%></span>
+                            <span class="reducedfrom">5.500.000.000<%=map.get("money")%></span>
                             <span class="rating">
                                 <input type="radio" class="rating-input" id="rating-input-1-5" name="rating-input-1">
                                 <label for="rating-input-1-5" class="rating-star1"> </label>
@@ -438,12 +438,12 @@
                 <a href="view.jsp?productId=<%=products.get(6).getProductId()%>"><img class="img-responsive chain" src="images/P007.jpg" alt=" " /></a>
                 <span class="star"> </span>
                 <div class="grid-chain-bottom">
-                    <h6><a href="view.jsp?productId=<%=products.get(6).getProductId()%>">
-                            <%=map.get(products.get(6).getProductName())%></a></h6>
+                    <h6><a href="#">
+                            BMW 750Li</a></h6>
                     <div class="star-price">
                         <div class="dolor-grid"> 
-                            <span class="actual">500<%=map.get("money")%></span>
-                            <span class="reducedfrom">800<%=map.get("money")%></span>
+                            <span class="actual">6.140.000.000<%=map.get("money")%></span>
+                            <span class="reducedfrom">6.350.000.000<%=map.get("money")%></span>
                             <span class="rating">
                                 <input type="radio" class="rating-input" id="rating-input-1-5" name="rating-input-1">
                                 <label for="rating-input-1-5" class="rating-star1"> </label>
@@ -466,12 +466,12 @@
                 <a href="view.jsp?productId=<%=products.get(7).getProductId()%>"><img class="img-responsive chain" src="images/P008.jpg" alt=" " /></a>
                 <span class="star"> </span>
                 <div class="grid-chain-bottom">
-                    <h6><a href="view.jsp?productId=<%=products.get(7).getProductId()%>">
-                            <%=map.get(products.get(7).getProductName())%></a></h6>
+                    <h6><a href="view.jsp?productId=#">
+                            Bình giữ nhiệt BMW</a></h6>
                     <div class="star-price">
                         <div class="dolor-grid"> 
-                            <span class="actual">300<%=map.get("money")%></span>
-                            <span class="reducedfrom">400<%=map.get("money")%></span>
+                            <span class="actual">1.200.000<%=map.get("money")%></span>
+                            <span class="reducedfrom">2.000.000<%=map.get("money")%></span>
                             <span class="rating">
                                 <input type="radio" class="rating-input" id="rating-input-1-5" name="rating-input-1">
                                 <label for="rating-input-1-5" class="rating-star1"> </label>
@@ -510,17 +510,13 @@
                         <li class="subitem2"><a href="sav.jsp"><%=map.get("xsav")%></a></li>                        
                     </ul>
                 </li>
-                <li class="item3"><a href="dreamcar.jsp"><%=map.get("conv")%></a>
-                </li>
-                <li class="item3"><a href="mseries.jsp"><%=map.get("mseries")%></a>                   
-                </li>
-                <li class="item4"><a href="bmwlifestyle.jsp"><%=map.get("bmwlife")%></a>
+                <li class="item2"><a href="#">Dòng xe mơ ước</a>
                     <ul class="cute">
-                        <li class="subitem1"><a href="error.jsp"><%=map.get("ion")%></a></li>
-                        <li class="subitem2"><a href="error.jsp"><%=map.get("fridge")%></a></li>
-                        <li class="subitem3"><a href="error.jsp"><%=map.get("wash")%></a></li>
-                        <li class="subitem1"><a href="error.jsp"><%=map.get("fan")%></a></li>
+                        <li class="subitem1"><a href="dreamcar.jsp"><%=map.get("conv")%></a></li>
+                        <li class="subitem2"><a href="mseries.jsp"><%=map.get("mseries")%></a></li>                      
                     </ul>
+                </li>                
+                <li class="item4"><a href="bmwlifestyle.jsp"><%=map.get("bmwlife")%></a>                    
                 </li>
             </ul>
         </div>
@@ -547,8 +543,8 @@
         <div class=" chain-grid menu-chain">
             <a href="view.jsp?productId=<%=products.get(8).getProductId()%>"><img class="img-responsive chain" src="images/P009.jpeg" alt=" " /></a>	   		     		
             <div class="grid-chain-bottom chain-watch"><h6>
-                    <a href="view.jsp?productId=<%=products.get(8).getProductId()%>">
-                        <%=map.get(products.get(8).getProductName())%></a></h6>
+                    <a href="#">
+                        BMW i8</a></h6>
                 <span class="actual dolor-left-grid">7.000.000.000<%=map.get("money")%></span>
                 <span class="reducedfrom">10.000.000.000<%=map.get("money")%></span>
             </div>
@@ -604,7 +600,7 @@
                 </ul>	
                 <ul class="location">
                     <li><span class="glyphicon glyphicon-envelope"></span></li>
-                    <li><a href="error.jsp">ecommerce@hcmiu.edu.vn.com</a></li>
+                    <li><a href="error.jsp">thanhgay69@gmail.com</a></li>
                     <div class="clearfix"></div>
                 </ul>						
             </div>
