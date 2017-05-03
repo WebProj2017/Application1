@@ -506,8 +506,8 @@
                 </li>
                 <li class="item2"><a href="#"><%=map.get("suv")%></a>
                     <ul class="cute">
-                        <li class="subitem1"><a href="error.jsp"><%=map.get("xsuv")%></a></li>
-                        <li class="subitem2"><a href="error.jsp"><%=map.get("xsav")%></a></li>                        
+                        <li class="subitem1"><a href="suv.jsp"><%=map.get("xsuv")%></a></li>
+                        <li class="subitem2"><a href="sav.jsp"><%=map.get("xsav")%></a></li>                        
                     </ul>
                 </li>
                 <li class="item3"><a href="dreamcar.jsp"><%=map.get("conv")%></a>
