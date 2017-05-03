@@ -48,22 +48,20 @@
                 <div class="container">
                     <div class="top-header-left">
                         <ul class="support">
-                            <li><a href="error.jsp"><label> </label></a></li>
-                            <li><a href="error.jsp"><%=map.get("live_support")%><span class="live"></span></a>
+                            <li><a href="#"><label> </label></a></li>
+                            <li><a href="#"><%=map.get("live_support")%><span class="live"></span></a>
                                
                             </li>
                         </ul>
                         <ul class="support">
-                            <li class="van"><a href="error.jsp"><label> </label></a></li>
-                            <li><a href="error.jsp"><%=map.get("shipping")%><span class="live"></span></a></li>
+                            <li class="van"><a href="#"><label> </label></a></li>
+                            <li><a href="#"><%=map.get("shipping")%><span class="live"></span></a></li>
                         </ul>
                     </div>
                     <div class="top-header-right">
                         <ul class="support">
-                            <li><a href="language?lang=vi">Tiếng Việt</a><a href="#">|</a> 
-                            <li><a href="language?lang=en">English</a>
-                            
-                        </ul>        
+                            <li><a href="language?lang=vi"><img src="images/Vietnam_flag.png" alt=""/> Tiếng Việt</a><a href="#">|</a>                                 
+                            <li><a href="language?lang=en"><img src="images/US_flag.png" alt=""/>English</a></ul>        
                     </div>
                 </div>
                 <!---->
