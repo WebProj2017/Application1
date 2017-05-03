@@ -24,8 +24,8 @@
     } else {
 %>
 <html>
-    <head>        
-        <link rel="icon" href="images/BMW.ico">
+    <head>
+        <link rel="icon" href="images/BMW.ico">        
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="ContentType" content="text/html" charset="utf-8"/>
         <title><%=map.get("title")%></title>
@@ -286,9 +286,9 @@
 
             <div class="" style="padding:10px ;">		  
                 <div class="row">
-                    <h1>Dòng 3 Series thế hệ mới</h1>
+                    <h1>Dòng 7 Series đời mới</h1>
                     <%
-                        List<Product> productsByCate = APIFetcher.fetcher("/series3Api");
+                        List<Product> productsByCate = APIFetcher.fetcher("/series7Api");
 
                         for (Product product : productsByCate) {%>
                     <div class="col-md-6" style="border: 1px solid  #bfbfbf;">
@@ -413,37 +413,36 @@
                                             <div class="clearfix"> </div>
                                             </div>   
                                             <div class="sub-cate">
-        <div class=" top-nav rsidebar span_1_of_left">
-            <h3 class="cate"><%=map.get("cate")%></h3>
-            <ul class="menu">
-                <li class="item1"><a href="#"><%=map.get("sedan")%></a>
-                    <ul class="cute">
-                        <li class="subitem1"><a href="series3.jsp">3 Series </a></li>
-                        <li class="subitem2"><a href="series5.jsp">5 Series </a></li>
-                        <li class="subitem3"><a href="series7.jsp">7 Series </a></li>                                         
-                    </ul>
-                </li>
-                <li class="item2"><a href="#"><%=map.get("suv")%></a>
-                    <ul class="cute">
-                        <li class="subitem1"><a href="error.jsp"><%=map.get("xsuv")%></a></li>
-                        <li class="subitem2"><a href="error.jsp"><%=map.get("xsav")%></a></li>                        
-                    </ul>
-                </li>
-                <li class="item3"><a href="dreamcar.jsp"><%=map.get("conv")%></a>
-                </li>
-                <li class="item3"><a href="mseries.jsp"><%=map.get("mseries")%></a>                   
-                </li>
-                <li class="item4"><a href="bmwlifestyle.jsp"><%=map.get("bmwlife")%></a>
-                    <ul class="cute">
-                        <li class="subitem1"><a href="error.jsp"><%=map.get("ion")%></a></li>
-                        <li class="subitem2"><a href="error.jsp"><%=map.get("fridge")%></a></li>
-                        <li class="subitem3"><a href="error.jsp"><%=map.get("wash")%></a></li>
-                        <li class="subitem1"><a href="error.jsp"><%=map.get("fan")%></a></li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-                                                <!--initiate accordion-->
+                                            <div class=" top-nav rsidebar span_1_of_left">
+                                                <h3 class="cate"><%=map.get("cate")%></h3>
+                                                <ul class="menu">
+                                                    <li class="item1"><a href="#"><%=map.get("sedan")%></a>
+                                                        <ul class="cute">
+                                                            <li class="subitem1"><a href="series3.jsp">3 Series </a></li>
+                                                            <li class="subitem2"><a href="series5.jsp">5 Series </a></li>
+                                                            <li class="subitem3"><a href="series7.jsp">7 Series </a></li>                                         
+                                                        </ul>
+                                                    </li>
+                                                    <li class="item2"><a href="#"><%=map.get("suv")%></a>
+                                                        <ul class="cute">
+                                                            <li class="subitem1"><a href="error.jsp"><%=map.get("xsuv")%></a></li>
+                                                            <li class="subitem2"><a href="error.jsp"><%=map.get("xsav")%></a></li>                        
+                                                        </ul>
+                                                    </li>
+                                                    <li class="item3"><a href="dreamcar.jsp"><%=map.get("conv")%></a>
+                                                    </li>
+                                                    <li class="item3"><a href="mseries.jsp"><%=map.get("mseries")%></a>                   
+                                                    </li>
+                                                    <li class="item4"><a href="bmwlifestyle.jsp"><%=map.get("bmwlife")%></a>
+                                                        <ul class="cute">
+                                                            <li class="subitem1"><a href="error.jsp"><%=map.get("ion")%></a></li>
+                                                            <li class="subitem2"><a href="error.jsp"><%=map.get("fridge")%></a></li>
+                                                            <li class="subitem3"><a href="error.jsp"><%=map.get("wash")%></a></li>
+                                                            <li class="subitem1"><a href="error.jsp"><%=map.get("fan")%></a></li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </div>                                               <!--initiate accordion-->
                                                 <script type="text/javascript">
                                                     $(function () {
                                                         var menu_ul = $('.menu > li > ul'),

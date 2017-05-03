@@ -61,7 +61,8 @@
                     <div class="top-header-right">
                         <ul class="support">
                             <li><a href="language?lang=vi"><img src="images/Vietnam_flag.png" alt=""/> Tiếng Việt</a><a href="#">|</a>                                 
-                            <li><a href="language?lang=en"><img src="images/US_flag.png" alt=""/>English</a></ul>        
+                            <li><a href="language?lang=en"><img src="images/US_flag.png" alt=""/>English</a>                                                     
+                        </ul>        
                     </div>
                 </div>
                 <!---->
@@ -310,7 +311,7 @@
                         <article style="position: absolute; width: 100%; opacity: 0;">					
                             <div class="banner-matter">
                                 <div class="col-md-5 banner-bag">
-                                    <img class="img-responsive " src="images/P001.jpg" alt=" " />
+                                    <img class="img-responsive " src="images/P001.png" alt=" " />
                                 </div>
                                 <div class="col-md-7 banner-off">							
                                     <h2><%=map.get("sales")%> 50%</h2>
