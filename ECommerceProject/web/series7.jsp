@@ -76,7 +76,7 @@
         <div class="container">
             <div class="col-sm-3 header-bottom-left">
                 <div class="logo">
-                    <a href="index.jsp">E-<span>COMMERCE</span></a>
+                    <a href="index.jsp"><img src="images/BMWLogo.jpeg" alt=""/></a>
                 </div>
                 <div class="search">
                     <input type="text" value="" placeholder="<%=map.get("place_holder")%>" 
@@ -463,12 +463,12 @@
                                                     });
                                                 </script>
                                                 <div class=" chain-grid menu-chain">
-                                                    <a href="view.jsp?productId=<%=products.get(8).getProductId()%>"><img class="img-responsive chain" src="images/P009.jpg" alt=" " /></a>	   		     		
+                                                    <a href="view.jsp?productId=<%=products.get(8).getProductId()%>"><img class="img-responsive chain" src="images/P009.jpeg" alt=" " /></a>	   		     		
                                                     <div class="grid-chain-bottom chain-watch"><h6>
                                                             <a href="view.jsp?productId=<%=products.get(8).getProductId()%>">
                                                                 <%=map.get(products.get(8).getProductName())%></a></h6>
-                                                        <span class="actual dolor-left-grid">300.000.000<%=map.get("money")%></span>
-                                                        <span class="reducedfrom">500.000.000<%=map.get("money")%></span>
+                                                        <span class="actual dolor-left-grid">7.000.000.000<%=map.get("money")%></span>
+                                                        <span class="reducedfrom">10.000.000.000<%=map.get("money")%></span>
                                                     </div>
                                                 </div>
                                                 <a class=" all-product" href="error.jsp"><%=map.get("view_all")%><span> </span></a> 	

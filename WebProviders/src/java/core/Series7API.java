@@ -20,13 +20,13 @@ public class Series7API extends HttpServlet {
     public static final String SERIES7_JSON_STRING = "{\"products\":["
             + "{\"productId\":\"730Li\",\"productName\":\"BMW 730Li\","
             + "\"productPrice\":99000,\"supplierId\":\"S004\","
-            + "\"info\":\"/WebProviders/images/730Li.jpg\"},"
+            + "\"info\":\"/WebProviders/images/730li.jpg\"},"
             + "{\"productId\":\"740Li\",\"productName\":\"BMW 740Li\","
             + "\"productPrice\":120000,\"supplierId\":\"S004\","
-            + "\"info\":\"/WebProviders/images/740Li.jpg\"},"
+            + "\"info\":\"/WebProviders/images/740li.png\"},"
             + "{\"productId\":\"750Li\",\"productName\":\"BMW 750Li\","
             + "\"productPrice\":150000,\"supplierId\":\"S004\","
-            + "\"info\":\"/WebProviders/images/750Li.jpg\"}]}";
+            + "\"info\":\"/WebProviders/images/750li.jpg\"}]}";
             
 
     @Override
