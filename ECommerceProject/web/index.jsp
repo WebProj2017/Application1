@@ -502,83 +502,25 @@
                     <ul class="cute">
                         <li class="subitem1"><a href="series3.jsp">3 Series </a></li>
                         <li class="subitem2"><a href="series5.jsp">5 Series </a></li>
-                        <li class="subitem3"><a href="series7.jsp">7 Series </a></li>
-                        <li class="subitem4"><a href="seriesm.jsp">Dòng M hiệu năng cao</a></li>                       
+                        <li class="subitem3"><a href="series7.jsp">7 Series </a></li>                                         
                     </ul>
                 </li>
                 <li class="item2"><a href="#"><%=map.get("suv")%></a>
                     <ul class="cute">
-                        <li class="subitem1"><a href="error.jsp"><%=map.get("men")%></a></li>
-                        <li class="subitem2"><a href="error.jsp"><%=map.get("women")%></a></li>
-                        <li class="subitem2"><a href="error.jsp"><%=map.get("child")%></a></li>
+                        <li class="subitem1"><a href="error.jsp"><%=map.get("xsuv")%></a></li>
+                        <li class="subitem2"><a href="error.jsp"><%=map.get("xsav")%></a></li>                        
                     </ul>
                 </li>
-                <li class="item3"><a href="error.jsp"><%=map.get("jewellery")%></a>
-                    <ul class="cute">
-                        <li class="subitem1"><a href="error.jsp"><%=map.get("bags")%></a></li>
-                        <li class="subitem2"><a href="error.jsp"><%=map.get("eyewear")%></a></li>
-                        <li class="subitem3"><a href="error.jsp"><%=map.get("hat")%></a></li>
-                        <li class="subitem3"><a href="error.jsp"><%=map.get("shoes")%></a></li>
-                    </ul>
+                <li class="item3"><a href="dreamcar.jsp"><%=map.get("conv")%></a>
                 </li>
-                <li class="item3"><a href="error.jsp"><%=map.get("living")%></a>
-                    <ul class="cute">
-                        <li class="subitem1"><a href="error.jsp"><%=map.get("kitapp")%></a></li>
-                        <li class="subitem2"><a href="error.jsp"><%=map.get("cleanapp")%></a></li>
-                        <li class="subitem3"><a href="error.jsp"><%=map.get("washapp")%></a></li>
-                        <li class="subitem3"><a href="error.jsp"><%=map.get("bathapp")%></a></li>
-                        <li class="subitem3"><a href="error.jsp"><%=map.get("outapp")%></a></li>
-                        <li class="subitem3"><a href="error.jsp"><%=map.get("decoapp")%></a></li>
-                    </ul>
+                <li class="item3"><a href="mseries.jsp"><%=map.get("mseries")%></a>                   
                 </li>
-                <li class="item4"><a href="error.jsp"><%=map.get("home")%></a>
+                <li class="item4"><a href="bmwlifestyle.jsp"><%=map.get("bmwlife")%></a>
                     <ul class="cute">
                         <li class="subitem1"><a href="error.jsp"><%=map.get("ion")%></a></li>
                         <li class="subitem2"><a href="error.jsp"><%=map.get("fridge")%></a></li>
                         <li class="subitem3"><a href="error.jsp"><%=map.get("wash")%></a></li>
                         <li class="subitem1"><a href="error.jsp"><%=map.get("fan")%></a></li>
-                        <li class="subitem1"><a href="error.jsp"><%=map.get("air")%></a></li>
-                        <li class="subitem1"><a href="error.jsp"><%=map.get("hot_water")%></a></li>
-                    </ul>
-                </li>
-                <li class="item4"><a href="error.jsp"><%=map.get("furni")%></a>
-                    <ul class="cute">
-                        <li class="subitem1"><a href="error.jsp"><%=map.get("bed")%></a></li>
-                        <li class="subitem2"><a href="error.jsp"><%=map.get("living_room")%></a></li>
-                        <li class="subitem3"><a href="error.jsp"><%=map.get("audi")%></a></li>
-                        <li class="subitem1"><a href="error.jsp"><%=map.get("dining")%></a></li>
-                        <li class="subitem1"><a href="error.jsp"><%=map.get("bath_room")%></a></li>
-                        <li class="subitem1"><a href="error.jsp"><%=map.get("floor")%></a></li>
-                    </ul>
-                </li>
-                <li class="item4"><a href="error.jsp"><%=map.get("beauty")%></a>
-                    <ul class="cute">
-                        <li class="subitem1"><a href="error.jsp"><%=map.get("func_medi")%></a></li>
-                        <li class="subitem2"><a href="error.jsp"><%=map.get("comestic")%></a></li>
-                        <li class="subitem3"><a href="error.jspl"><%=map.get("makeup")%></a></li>
-                    </ul>
-                </li>
-                <li class="item4"><a href="error.jsp"><%=map.get("food")%></a>
-                    <ul class="cute">
-                        <li class="subitem1"><a href="error.jsp"><%=map.get("food_alive")%></a></li>
-                        <li class="subitem2"><a href="error.jsp"><%=map.get("food_can")%></a></li>
-                    </ul>
-                </li>
-                <li class="item4"><a href="error.jsp"><%=map.get("travel")%></a>
-                    <ul class="cute">
-                        <li class="subitem1"><a href="error.jsp"><%=map.get("suitcase")%></a></li>
-                        <li class="subitem2"><a href="error.jsp"><%=map.get("backpack")%></a></li>
-                        <li class="subitem3"><a href="error.jsp"><%=map.get("tent")%></a></li>
-                    </ul>
-                </li>
-                <li class="item4"><a href="error.jsp"><%=map.get("sport")%></a>
-                    <ul class="cute">
-                        <li class="subitem1"><a href="error.jsp"><%=map.get("soccer")%></a></li>
-                        <li class="subitem2"><a href="error.jsp"><%=map.get("tt")%></a></li>
-                        <li class="subitem3"><a href="error.jsp"><%=map.get("badminton")%></a></li>
-                        <li class="subitem3"><a href="error.jsp"><%=map.get("tenis")%></a></li>
-                        <li class="subitem3"><a href="error.jsp"><%=map.get("danger")%></a></li>
-                        <li class="subitem3"><a href="error.jsp"><%=map.get("swim")%></a></li>
                     </ul>
                 </li>
             </ul>

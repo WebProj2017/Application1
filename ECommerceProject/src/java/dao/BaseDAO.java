@@ -302,7 +302,7 @@ public class BaseDAO {
 
         try {
             String sqlQuery = "INSERT INTO ecmrproj.`RequestForm`"
-                    + "(Name, PhoneNo, Email, Interested, IssueCode, Contain)"
+                    + "(Name, PhoneNo, Email, Interested, Issue, Contain)"
                     + " VALUES ('" + feed.getName()
                     + "','" + feed.getPhoneNo()
                     + "','" + feed.getEmail()
