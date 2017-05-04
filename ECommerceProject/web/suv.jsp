@@ -286,9 +286,9 @@
 
             <div class="" style="padding:10px ;">		  
                 <div class="row">
-                    <h1>Dòng Thể thao đa dụng</h1>
+                    <h1>Dòng xe vượt địa hình</h1>
                     <%
-                        List<Product> productsByCate = APIFetcher.fetcher("/SuvAPI");
+                        List<Product> productsByCate = APIFetcher.fetcher("/suvApi");
 
                         for (Product product : productsByCate) {%>
                     <div class="col-md-6" style="border: 1px solid  #bfbfbf;">
@@ -321,97 +321,121 @@
 
                                             </div>
 
-                                            <div class="products">
-                                                <%=map.get("products")%>
-                                            </div>
-                                            <div class="product-left">
-                                                <div class="col-md-4 chain-grid">
-                                                    <a href="view.jsp?productId=<%=products.get(5).getProductId()%>"><img class="img-responsive chain" src="images/P006.jpg" alt=" " /></a>
-                                                    <span class="star"> </span>
-                                                    <div class="grid-chain-bottom">
-                                                        <h6><a href="view.jsp?productId=<%=products.get(5).getProductId()%>">
-                                                                <%=map.get(products.get(5).getProductName())%>
-                                                            </a></h6>
-                                                        <div class="star-price">
-                                                            <div class="dolor-grid"> 
-                                                                <span class="actual">800<%=map.get("money")%></span>
-                                                                <span class="reducedfrom">1200<%=map.get("money")%></span>
-                                                                <span class="rating">
-                                                                    <input type="radio" class="rating-input" id="rating-input-1-5" name="rating-input-1">
-                                                                    <label for="rating-input-1-5" class="rating-star1"> </label>
-                                                                    <input type="radio" class="rating-input" id="rating-input-1-4" name="rating-input-1">
-                                                                    <label for="rating-input-1-4" class="rating-star1"> </label>
-                                                                    <input type="radio" class="rating-input" id="rating-input-1-3" name="rating-input-1">
-                                                                    <label for="rating-input-1-3" class="rating-star"> </label>
-                                                                    <input type="radio" class="rating-input" id="rating-input-1-2" name="rating-input-1">
-                                                                    <label for="rating-input-1-2" class="rating-star"> </label>
-                                                                    <input type="radio" class="rating-input" id="rating-input-1-1" name="rating-input-1">
-                                                                    <label for="rating-input-1-1" class="rating-star"> </label>
-                                                                </span>
-                                                            </div>
-                                                            <div class="clearfix"> </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-4 chain-grid">
-                                                    <a href="view.jsp?productId=<%=products.get(6).getProductId()%>"><img class="img-responsive chain" src="images/P007.jpg" alt=" " /></a>
-                                                    <span class="star"> </span>
-                                                    <div class="grid-chain-bottom">
-                                                        <h6><a href="view.jsp?productId=<%=products.get(6).getProductId()%>">
-                                                                <%=map.get(products.get(6).getProductName())%></a></h6>
-                                                        <div class="star-price">
-                                                            <div class="dolor-grid"> 
-                                                                <span class="actual">500<%=map.get("money")%></span>
-                                                                <span class="reducedfrom">800<%=map.get("money")%></span>
-                                                                <span class="rating">
-                                                                    <input type="radio" class="rating-input" id="rating-input-1-5" name="rating-input-1">
-                                                                    <label for="rating-input-1-5" class="rating-star1"> </label>
-                                                                    <input type="radio" class="rating-input" id="rating-input-1-4" name="rating-input-1">
-                                                                    <label for="rating-input-1-4" class="rating-star1"> </label>
-                                                                    <input type="radio" class="rating-input" id="rating-input-1-3" name="rating-input-1">
-                                                                    <label for="rating-input-1-3" class="rating-star"> </label>
-                                                                    <input type="radio" class="rating-input" id="rating-input-1-2" name="rating-input-1">
-                                                                    <label for="rating-input-1-2" class="rating-star"> </label>
-                                                                    <input type="radio" class="rating-input" id="rating-input-1-1" name="rating-input-1">
-                                                                    <label for="rating-input-1-1" class="rating-star"> </label>
-                                                                </span>
-                                                            </div>
+                                            <div class="shoes-grid-left">
+            <a href="view.jsp?productId=<%=products.get(3).getProductId()%>">				 
+                <div class="col-md-6 con-sed-grid">
+                    <div class=" elit-grid">
+                        <h4>BMW 530i</h4><br>
+                        <p><%=map.get("nike.detail")%></p>
+                        <span class="on-get"><%=map.get("get")%></span>
+                    </div>						
+                    <img class="img-responsive shoe-left" src="images/P004.jpg" alt=" " />
+                    <div class="clearfix"> </div>
+                </div>
+            </a>
+            <a href="view.jsp?productId=<%=products.get(4).getProductId()%>">	
+                <div class="col-md-6 con-sed-grid sed-left-top">
+                    <div class=" elit-grid"> 
+                        <h4>BMW 730Li</h4><br>
+                        <p><%=map.get("rest.detail")%></p>
+                        <span class="on-get"><%=map.get("get")%></span>
+                    </div>		
+                    <img class="img-responsive shoe-left" src="images/P005.jpg" alt=" " />
+                    <div class="clearfix"> </div>
+                </div>
+            </a>
+        </div>
+        <div class="products">
+            <%=map.get("products")%>
+        </div>
+        <div class="product-left">
+            <div class="col-md-4 chain-grid">
+                <a href="view.jsp?productId=<%=products.get(5).getProductId()%>"><img class="img-responsive chain" src="images/P005.jpg" alt=" " /></a>
+                <span class="star"> </span>
+                <div class="grid-chain-bottom">
+                    <h6><a href="#">
+                            BMW 740Li
+                        </a></h6>
+                    <div class="star-price">
+                        <div class="dolor-grid"> 
+                            <span class="actual">5.250.000.000<%=map.get("money")%></span>
+                            <span class="reducedfrom">5.500.000.000<%=map.get("money")%></span>
+                            <span class="rating">
+                                <input type="radio" class="rating-input" id="rating-input-1-5" name="rating-input-1">
+                                <label for="rating-input-1-5" class="rating-star1"> </label>
+                                <input type="radio" class="rating-input" id="rating-input-1-4" name="rating-input-1">
+                                <label for="rating-input-1-4" class="rating-star1"> </label>
+                                <input type="radio" class="rating-input" id="rating-input-1-3" name="rating-input-1">
+                                <label for="rating-input-1-3" class="rating-star"> </label>
+                                <input type="radio" class="rating-input" id="rating-input-1-2" name="rating-input-1">
+                                <label for="rating-input-1-2" class="rating-star"> </label>
+                                <input type="radio" class="rating-input" id="rating-input-1-1" name="rating-input-1">
+                                <label for="rating-input-1-1" class="rating-star"> </label>
+                            </span>
+                        </div>
+                        <div class="clearfix"> </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 chain-grid">
+                <a href="view.jsp?productId=<%=products.get(6).getProductId()%>"><img class="img-responsive chain" src="images/P007.jpg" alt=" " /></a>
+                <span class="star"> </span>
+                <div class="grid-chain-bottom">
+                    <h6><a href="#">
+                            BMW 750Li</a></h6>
+                    <div class="star-price">
+                        <div class="dolor-grid"> 
+                            <span class="actual">6.140.000.000<%=map.get("money")%></span>
+                            <span class="reducedfrom">6.350.000.000<%=map.get("money")%></span>
+                            <span class="rating">
+                                <input type="radio" class="rating-input" id="rating-input-1-5" name="rating-input-1">
+                                <label for="rating-input-1-5" class="rating-star1"> </label>
+                                <input type="radio" class="rating-input" id="rating-input-1-4" name="rating-input-1">
+                                <label for="rating-input-1-4" class="rating-star1"> </label>
+                                <input type="radio" class="rating-input" id="rating-input-1-3" name="rating-input-1">
+                                <label for="rating-input-1-3" class="rating-star"> </label>
+                                <input type="radio" class="rating-input" id="rating-input-1-2" name="rating-input-1">
+                                <label for="rating-input-1-2" class="rating-star"> </label>
+                                <input type="radio" class="rating-input" id="rating-input-1-1" name="rating-input-1">
+                                <label for="rating-input-1-1" class="rating-star"> </label>
+                            </span>
+                        </div>
 
-                                                            <div class="clearfix"> </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-4 chain-grid grid-top-chain">
-                                                    <a href="view.jsp?productId=<%=products.get(7).getProductId()%>"><img class="img-responsive chain" src="images/P008.jpg" alt=" " /></a>
-                                                    <span class="star"> </span>
-                                                    <div class="grid-chain-bottom">
-                                                        <h6><a href="view.jsp?productId=<%=products.get(7).getProductId()%>">
-                                                                <%=map.get(products.get(7).getProductName())%></a></h6>
-                                                        <div class="star-price">
-                                                            <div class="dolor-grid"> 
-                                                                <span class="actual">300<%=map.get("money")%></span>
-                                                                <span class="reducedfrom">400<%=map.get("money")%></span>
-                                                                <span class="rating">
-                                                                    <input type="radio" class="rating-input" id="rating-input-1-5" name="rating-input-1">
-                                                                    <label for="rating-input-1-5" class="rating-star1"> </label>
-                                                                    <input type="radio" class="rating-input" id="rating-input-1-4" name="rating-input-1">
-                                                                    <label for="rating-input-1-4" class="rating-star1"> </label>
-                                                                    <input type="radio" class="rating-input" id="rating-input-1-3" name="rating-input-1">
-                                                                    <label for="rating-input-1-3" class="rating-star"> </label>
-                                                                    <input type="radio" class="rating-input" id="rating-input-1-2" name="rating-input-1">
-                                                                    <label for="rating-input-1-2" class="rating-star"> </label>
-                                                                    <input type="radio" class="rating-input" id="rating-input-1-1" name="rating-input-1">
-                                                                    <label for="rating-input-1-1" class="rating-star"> </label>
-                                                                </span>
-                                                            </div>
-                                                            <div class="clearfix"> </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="clearfix"> </div>
-                                            </div>
-                                            <div class="clearfix"> </div>
-                                            </div>   
+                        <div class="clearfix"> </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 chain-grid grid-top-chain">
+                <a href="view.jsp?productId=<%=products.get(7).getProductId()%>"><img class="img-responsive chain" src="images/P008.jpg" alt=" " /></a>
+                <span class="star"> </span>
+                <div class="grid-chain-bottom">
+                    <h6><a href="view.jsp?productId=#">
+                            Bình giữ nhiệt BMW</a></h6>
+                    <div class="star-price">
+                        <div class="dolor-grid"> 
+                            <span class="actual">1.200.000<%=map.get("money")%></span>
+                            <span class="reducedfrom">2.000.000<%=map.get("money")%></span>
+                            <span class="rating">
+                                <input type="radio" class="rating-input" id="rating-input-1-5" name="rating-input-1">
+                                <label for="rating-input-1-5" class="rating-star1"> </label>
+                                <input type="radio" class="rating-input" id="rating-input-1-4" name="rating-input-1">
+                                <label for="rating-input-1-4" class="rating-star1"> </label>
+                                <input type="radio" class="rating-input" id="rating-input-1-3" name="rating-input-1">
+                                <label for="rating-input-1-3" class="rating-star"> </label>
+                                <input type="radio" class="rating-input" id="rating-input-1-2" name="rating-input-1">
+                                <label for="rating-input-1-2" class="rating-star"> </label>
+                                <input type="radio" class="rating-input" id="rating-input-1-1" name="rating-input-1">
+                                <label for="rating-input-1-1" class="rating-star"> </label>
+                            </span>
+                        </div>
+                        <div class="clearfix"> </div>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+        <div class="clearfix"> </div>
+    </div> 
                                             <div class="sub-cate">
                                             <div class=" top-nav rsidebar span_1_of_left">
                                                 <h3 class="cate"><%=map.get("cate")%></h3>
@@ -463,73 +487,73 @@
                                                     });
                                                 </script>
                                                 <div class=" chain-grid menu-chain">
-                                                    <a href="view.jsp?productId=<%=products.get(8).getProductId()%>"><img class="img-responsive chain" src="images/P009.jpeg" alt=" " /></a>	   		     		
-                                                    <div class="grid-chain-bottom chain-watch"><h6>
-                                                            <a href="view.jsp?productId=<%=products.get(8).getProductId()%>">
-                                                                <%=map.get(products.get(8).getProductName())%></a></h6>
-                                                        <span class="actual dolor-left-grid">7.000.000.000<%=map.get("money")%></span>
-                                                        <span class="reducedfrom">10.000.000.000<%=map.get("money")%></span>
-                                                    </div>
-                                                </div>
-                                                <a class=" all-product" href="error.jsp"><%=map.get("view_all")%><span> </span></a> 	
-                                            </div>
-                                            <div class="clearfix"> </div>        	         
-                                            </div>
-                                            <div class="temp">
+            <a href="view.jsp?productId=<%=products.get(8).getProductId()%>"><img class="img-responsive chain" src="images/P009.jpeg" alt=" " /></a>	   		     		
+            <div class="grid-chain-bottom chain-watch"><h6>
+                    <a href="#">
+                        BMW i8</a></h6>
+                <span class="actual dolor-left-grid">7.000.000.000<%=map.get("money")%></span>
+                <span class="reducedfrom">10.000.000.000<%=map.get("money")%></span>
+            </div>
+        </div>
+        <a class=" all-product" href="error.jsp"><%=map.get("view_all")%><span> </span></a> 	
+    </div>
+    <div class="clearfix"> </div>        	         
+</div>
+<div class="temp">
 
-                                            </div>
-                                            <div class="clearfix"> </div>
-                                            <div class="footer-top">
-                                                <div class="container">
-                                                    <div class="foo-grids">
-                                                        <div class="col-md-3 footer-grid">
-                                                            <h4 class="footer-head"><%=map.get("intro")%></h4>
-                                                            <%=map.get("intro_deep")%>
-                                                        </div>
-                                                        <div class="col-md-3 footer-grid">
-                                                            <h4 class="footer-head"><%=map.get("help")%></h4>
-                                                            <ul>
-                                                                <li><a href="#"><%=map.get("sitemap")%></a></li>						
-                                                                <li><a href="#"><%=map.get("footer.control")%></a></li>
-                                                                <li><a href="FAQ.jsp">FAQ</a></li>
-                                                                <li><a href="feed.jsp"><%=map.get("feed")%></a></li>
-                                                                <li><a href="contact.jsp"><%=map.get("contact")%></a></li>
-                                                                <li><a href="#">Code</a></li>
-                                                            </ul>
-                                                        </div>
-                                                        <div class="col-md-3 footer-grid">
-                                                            <h4 class="footer-head"><%=map.get("info")%></h4>
-                                                            <ul>
-                                                                <li><a href="error.jsp"><%=map.get("locale")%></a></li>	
-                                                                <li><a href="error.jsp"><%=map.get("terms")%></a></li>
-                                                                <li><a href="error.jsp"><%=map.get("pop_search")%></a></li>	
-                                                                <li><a href="error.jsp"><%=map.get("secure")%></a></li>	
-                                                            </ul>
-                                                        </div>
-                                                        <div class="col-md-3 footer-grid">
-                                                            <h4 class="footer-head"><%=map.get("contacts")%></h4>
-                                                            <span class="hq"><%=map.get("headq")%></span>
+</div>
+<div class="clearfix"> </div>
+<div class="footer-top">
+    <div class="container">
+        <div class="foo-grids">
+            <div class="col-md-3 footer-grid">
+                <h4 class="footer-head"><%=map.get("intro")%></h4>
+                <%=map.get("intro_deep")%>
+            </div>
+            <div class="col-md-3 footer-grid">
+                <h4 class="footer-head"><%=map.get("help")%></h4>
+                <ul>
+                    <li><a href="error.jsp"><%=map.get("sitemap")%></a></li>						
+                    <li><a href="error.jsp"><%=map.get("footer.control")%></a></li>
+                    <li><a href="FAQ.jsp">FAQ</a></li>
+                    <li><a href="feed.jsp"><%=map.get("feed")%></a></li>
+                    <li><a href="contact.jsp"><%=map.get("contact")%></a></li>
+                    <li><a href="error.jsp">Code</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 footer-grid">
+                <h4 class="footer-head"><%=map.get("info")%></h4>
+                <ul>
+                    <li><a href="error.jsp"><%=map.get("locale")%></a></li>	
+                    <li><a href="error.jsp"><%=map.get("terms")%></a></li>
+                    <li><a href="error.jsp"><%=map.get("pop_search")%></a></li>	
+                    <li><a href="error.jsp"><%=map.get("secure")%></a></li>	
+                </ul>
+            </div>
+            <div class="col-md-3 footer-grid">
+                <h4 class="footer-head"><%=map.get("contacts")%></h4>
+                <span class="hq"><%=map.get("headq")%></span>
 
-                                                            <ul class="location">
-                                                                <li><span class="glyphicon glyphicon-map-marker"></span></li>
-                                                                <li><a href="error.jsp"><%=map.get("hrm")%></a></li>
-                                                                <div class="clearfix"></div>
-                                                            </ul>	
-                                                            <ul class="location">
-                                                                <li><span class="glyphicon glyphicon-earphone"></span></li>
-                                                                <li><a href="error.jsp">0165 921 1734</a></li>
-                                                                <div class="clearfix"></div>
-                                                            </ul>	
-                                                            <ul class="location">
-                                                                <li><span class="glyphicon glyphicon-envelope"></span></li>
-                                                                <li><a href="error.jsp">ecommerce@hcmiu.edu.vn.com</a></li>
-                                                                <div class="clearfix"></div>
-                                                            </ul>						
-                                                        </div>
-                                                        <div class="clearfix"></div>
-                                                    </div>						
-                                                </div>	
-                                            </div>	
-                                            </body>
-                                            </html>
-                                            <%}%>   
+                <ul class="location">
+                    <li><span class="glyphicon glyphicon-map-marker"></span></li>
+                    <li><a href="error.jsp"><%=map.get("hrm")%></a></li>
+                    <div class="clearfix"></div>
+                </ul>	
+                <ul class="location">
+                    <li><span class="glyphicon glyphicon-earphone"></span></li>
+                    <li><a href="error.jsp">0165 921 1734</a></li>
+                    <div class="clearfix"></div>
+                </ul>	
+                <ul class="location">
+                    <li><span class="glyphicon glyphicon-envelope"></span></li>
+                    <li><a href="error.jsp">thanhgay69@gmail.com</a></li>
+                    <div class="clearfix"></div>
+                </ul>						
+            </div>
+            <div class="clearfix"></div>
+        </div>						
+    </div>	
+</div>	
+</body>
+</html>
+<%}%>   

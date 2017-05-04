@@ -1,5 +1,3 @@
-
-
 <%@page import="repository.ProductRepositoty"%>
 <%@page import="model.Product"%>
 <%@page import="java.util.List"%>

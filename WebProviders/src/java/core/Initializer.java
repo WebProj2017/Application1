@@ -53,5 +53,24 @@ public class Initializer {
         
         return products.getProducts();
     }
+     
+    public static List<Product> getDreamCar()    {
+        Products products = (Products) GSON.fromJson(DreamCarAPI.DREAMCAR_JSON_STRING, Products.class);
+        
+        return products.getProducts();
+    }
+    
+    public static List<Product> getSAV()    {
+        Products products = (Products) GSON.fromJson(SAVAPI.SAV_JSON_STRING, Products.class);
+        
+        return products.getProducts();
+    }
+    
+    public static List<Product> getSUV()    {
+        Products products = (Products) GSON.fromJson(SUVAPI.SUV_JSON_STRING, Products.class);
+        
+        return products.getProducts();
+    }
+
 
 }

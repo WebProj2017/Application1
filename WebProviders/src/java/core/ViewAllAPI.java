@@ -14,10 +14,10 @@ import java.util.List;
  *
  * @author IU-CSE Team
  */
-@WebServlet("/series3Api")
-public class Series3API extends HttpServlet {
+@WebServlet("/ViewAllAPI")
+public class ViewAllAPI extends HttpServlet {
 
-    public static final String SERIES3_JSON_STRING = "{\"products\":["
+    public static final String VIEWALL_JSON_STRING = "{\"products\":["
             + "{\"productId\":\"320i\",\"productName\":\"BMW 320i\","
             + "\"productPrice\":38000,\"supplierId\":\"S004\","
             + "\"info\":\"/WebProviders/images/320i.jpeg\"},"
@@ -36,7 +36,7 @@ public class Series3API extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws IOException, ServletException {
         PrintWriter out = response.getWriter();
-        out.print(SERIES3_JSON_STRING);
+        out.print(VIEWALL_JSON_STRING);
 //       Gson gson = new Gson();
 //       String test = gson.toJson(new Category());
     }
