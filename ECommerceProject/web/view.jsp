@@ -27,6 +27,12 @@
 %>
 <html>
     <head>
+        <style>
+       #map {
+        height: 200px;
+        width: 200px;
+       }
+    </style>
         <link rel="icon" href="images/BMW.ico">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="ContentType" content="text/html" charset="utf-8"/>
@@ -61,8 +67,8 @@
                     </div>
                     <div class="top-header-right">
                         <ul class="support">
-                            <li><a href="language?lang=vi">Tiếng Việt</a><a href="#">|</a> 
-                            <li><a href="language?lang=en">English</a>
+                            <li><a href="language?lang=vi"><img src="images/Vietnam_flag.png" alt=""/> Tiếng Việt</a><a href="#">|</a>                                 
+                            <li><a href="language?lang=en"><img src="images/US_flag.png" alt=""/>English</a>     
                         </ul>        
                     </div>
                 </div>
@@ -76,7 +82,7 @@
         <div class="container">
             <div class="col-sm-3 header-bottom-left">
                 <div class="logo">
-                    <a href="index.jsp">E-<span>COMMERCE</span></a>
+                    <a href="index.jsp"><img src="images/BMWLogo.jpeg" alt=""/></a>
                 </div>
                 <div class="search">
                     <input type="text" value=""
@@ -242,6 +248,12 @@
 
 <script type="text/javascript">
 
+    $(document).ready(function(){
+        $("#reg-email").blur(function(){
+            checkEmailInExists();
+        });
+    });
+    
     function registerValidate() {
 
         var username = document.getElementById("reg-username").value;
@@ -273,12 +285,30 @@
             document.getElementById("repass-error").innerHTML = '<%=map.get("reg.repasserr")%>';
             return false;
         }
-
-        return true;
+        
+        return checkEmailInExists();
     }
+    
+    function checkEmailInExists(){
+        var email = $("#reg-email").val();
+	$.ajax({
+            url: 'ajaxcheckemail',
+            type: 'GET',
+            contentType: 'application/json',
+            data: {"email" : email},
+            success: function (res) {
+                if(res){
+                       $("#email-error").html('Email đã tồn tại trong database');
+                       return false;
+                }   
+                
+                return true;
+            }
+	});
+    }
+       
 
 </script>
-
 <!---->
 <div class="container">
     <div class="shoes-grid">
@@ -334,16 +364,16 @@
         </div>
         <div class="product-left">
             <div class="col-md-4 chain-grid">
-                <a href="view.jsp?productId=<%=products.get(5).getProductId()%>"><img class="img-responsive chain" src="images/P006.jpg" alt=" " /></a>
+                <a href="view.jsp?productId=<%=products.get(5).getProductId()%>"><img class="img-responsive chain" src="images/P005.jpg" alt=" " /></a>
                 <span class="star"> </span>
                 <div class="grid-chain-bottom">
-                    <h6><a href="view.jsp?productId=<%=products.get(5).getProductId()%>">
-                            <%=map.get(products.get(5).getProductName())%>
+                    <h6><a href="#">
+                            BMW 740Li
                         </a></h6>
                     <div class="star-price">
                         <div class="dolor-grid"> 
-                            <span class="actual">800<%=map.get("money")%></span>
-                            <span class="reducedfrom">1200<%=map.get("money")%></span>
+                            <span class="actual">5.250.000.000<%=map.get("money")%></span>
+                            <span class="reducedfrom">5.500.000.000<%=map.get("money")%></span>
                             <span class="rating">
                                 <input type="radio" class="rating-input" id="rating-input-1-5" name="rating-input-1">
                                 <label for="rating-input-1-5" class="rating-star1"> </label>
@@ -365,12 +395,12 @@
                 <a href="view.jsp?productId=<%=products.get(6).getProductId()%>"><img class="img-responsive chain" src="images/P007.jpg" alt=" " /></a>
                 <span class="star"> </span>
                 <div class="grid-chain-bottom">
-                    <h6><a href="view.jsp?productId=<%=products.get(6).getProductId()%>">
-                            <%=map.get(products.get(6).getProductName())%></a></h6>
+                    <h6><a href="#">
+                            BMW 750Li</a></h6>
                     <div class="star-price">
                         <div class="dolor-grid"> 
-                            <span class="actual">500<%=map.get("money")%></span>
-                            <span class="reducedfrom">800<%=map.get("money")%></span>
+                            <span class="actual">6.140.000.000<%=map.get("money")%></span>
+                            <span class="reducedfrom">6.350.000.000<%=map.get("money")%></span>
                             <span class="rating">
                                 <input type="radio" class="rating-input" id="rating-input-1-5" name="rating-input-1">
                                 <label for="rating-input-1-5" class="rating-star1"> </label>
@@ -393,12 +423,12 @@
                 <a href="view.jsp?productId=<%=products.get(7).getProductId()%>"><img class="img-responsive chain" src="images/P008.jpg" alt=" " /></a>
                 <span class="star"> </span>
                 <div class="grid-chain-bottom">
-                    <h6><a href="view.jsp?productId=<%=products.get(7).getProductId()%>">
-                            <%=map.get(products.get(7).getProductName())%></a></h6>
+                    <h6><a href="view.jsp?productId=#">
+                            Bình giữ nhiệt BMW</a></h6>
                     <div class="star-price">
                         <div class="dolor-grid"> 
-                            <span class="actual">300<%=map.get("money")%></span>
-                            <span class="reducedfrom">400<%=map.get("money")%></span>
+                            <span class="actual">1.200.000<%=map.get("money")%></span>
+                            <span class="reducedfrom">2.000.000<%=map.get("money")%></span>
                             <span class="rating">
                                 <input type="radio" class="rating-input" id="rating-input-1-5" name="rating-input-1">
                                 <label for="rating-input-1-5" class="rating-star1"> </label>
@@ -424,89 +454,26 @@
         <div class=" top-nav rsidebar span_1_of_left">
             <h3 class="cate"><%=map.get("cate")%></h3>
             <ul class="menu">
-                <li class="item1"><a href="error.jsp"><%=map.get("sedan")%></a>
+                <li class="item1"><a href="#"><%=map.get("sedan")%></a>
                     <ul class="cute">
-                        <li class="subitem1"><a href="phone.jsp"><%=map.get("phone")%></a></li>
-                        <li class="subitem2"><a href="laptop.jsp">Laptop</a></li>
-                        <li class="subitem3"><a href="tablet.jsp"><%=map.get("ipad")%></a></li>
-                        <li class="subitem4"><a href="television.jsp"><%=map.get("tv")%></a></li>
-                        <li class="subitem5"><a href="error.jsp"><%=map.get("camera")%></a></li>
+                        <li class="subitem1"><a href="series3.jsp">3 Series </a></li>
+                        <li class="subitem2"><a href="series5.jsp">5 Series </a></li>
+                        <li class="subitem3"><a href="series7.jsp">7 Series </a></li>                                         
                     </ul>
                 </li>
-                <li class="item2"><a href="error.jsp"><%=map.get("clothes")%></a>
+                <li class="item2"><a href="#"><%=map.get("suv")%></a>
                     <ul class="cute">
-                        <li class="subitem1"><a href="error.jsp"><%=map.get("men")%></a></li>
-                        <li class="subitem2"><a href="error.jsp"><%=map.get("women")%></a></li>
-                        <li class="subitem2"><a href="error.jsp"><%=map.get("child")%></a></li>
+                        <li class="subitem1"><a href="suv.jsp"><%=map.get("xsuv")%></a></li>
+                        <li class="subitem2"><a href="sav.jsp"><%=map.get("xsav")%></a></li>                        
                     </ul>
                 </li>
-                <li class="item3"><a href="error.jsp"><%=map.get("jewellery")%></a>
+                <li class="item2"><a href="#">Dòng xe mơ ước</a>
                     <ul class="cute">
-                        <li class="subitem1"><a href="error.jsp"><%=map.get("bags")%></a></li>
-                        <li class="subitem2"><a href="error.jsp"><%=map.get("eyewear")%></a></li>
-                        <li class="subitem3"><a href="error.jsp"><%=map.get("hat")%></a></li>
-                        <li class="subitem3"><a href="error.jsp"><%=map.get("shoes")%></a></li>
+                        <li class="subitem1"><a href="dreamcar.jsp"><%=map.get("conv")%></a></li>
+                        <li class="subitem2"><a href="mseries.jsp"><%=map.get("mseries")%></a></li>                      
                     </ul>
-                </li>
-                <li class="item3"><a href="error.jsp"><%=map.get("living")%></a>
-                    <ul class="cute">
-                        <li class="subitem1"><a href="error.jsp"><%=map.get("kitapp")%></a></li>
-                        <li class="subitem2"><a href="error.jsp"><%=map.get("cleanapp")%></a></li>
-                        <li class="subitem3"><a href="error.jsp"><%=map.get("washapp")%></a></li>
-                        <li class="subitem3"><a href="error.jsp"><%=map.get("bathapp")%></a></li>
-                        <li class="subitem3"><a href="error.jsp"><%=map.get("outapp")%></a></li>
-                        <li class="subitem3"><a href="error.jsp"><%=map.get("decoapp")%></a></li>
-                    </ul>
-                </li>
-                <li class="item4"><a href="error.jsp"><%=map.get("home")%></a>
-                    <ul class="cute">
-                        <li class="subitem1"><a href="error.jsp"><%=map.get("ion")%></a></li>
-                        <li class="subitem2"><a href="error.jsp"><%=map.get("fridge")%></a></li>
-                        <li class="subitem3"><a href="error.jsp"><%=map.get("wash")%></a></li>
-                        <li class="subitem1"><a href="error.jsp"><%=map.get("fan")%></a></li>
-                        <li class="subitem1"><a href="error.jsp"><%=map.get("air")%></a></li>
-                        <li class="subitem1"><a href="error.jsp"><%=map.get("hot_water")%></a></li>
-                    </ul>
-                </li>
-                <li class="item4"><a href="error.jsp"><%=map.get("furni")%></a>
-                    <ul class="cute">
-                        <li class="subitem1"><a href="error.jsp"><%=map.get("bed")%></a></li>
-                        <li class="subitem2"><a href="error.jsp"><%=map.get("living_room")%></a></li>
-                        <li class="subitem3"><a href="error.jsp"><%=map.get("audi")%></a></li>
-                        <li class="subitem1"><a href="error.jsp"><%=map.get("dining")%></a></li>
-                        <li class="subitem1"><a href="error.jsp"><%=map.get("bath_room")%></a></li>
-                        <li class="subitem1"><a href="error.jsp"><%=map.get("floor")%></a></li>
-                    </ul>
-                </li>
-                <li class="item4"><a href="error.jsp"><%=map.get("beauty")%></a>
-                    <ul class="cute">
-                        <li class="subitem1"><a href="error.jsp"><%=map.get("func_medi")%></a></li>
-                        <li class="subitem2"><a href="error.jsp"><%=map.get("comestic")%></a></li>
-                        <li class="subitem3"><a href="error.jspl"><%=map.get("makeup")%></a></li>
-                    </ul>
-                </li>
-                <li class="item4"><a href="error.jsp"><%=map.get("food")%></a>
-                    <ul class="cute">
-                        <li class="subitem1"><a href="error.jsp"><%=map.get("food_alive")%></a></li>
-                        <li class="subitem2"><a href="error.jsp"><%=map.get("food_can")%></a></li>
-                    </ul>
-                </li>
-                <li class="item4"><a href="error.jsp"><%=map.get("travel")%></a>
-                    <ul class="cute">
-                        <li class="subitem1"><a href="error.jsp"><%=map.get("suitcase")%></a></li>
-                        <li class="subitem2"><a href="error.jsp"><%=map.get("backpack")%></a></li>
-                        <li class="subitem3"><a href="error.jsp"><%=map.get("tent")%></a></li>
-                    </ul>
-                </li>
-                <li class="item4"><a href="error.jsp"><%=map.get("sport")%></a>
-                    <ul class="cute">
-                        <li class="subitem1"><a href="error.jsp"><%=map.get("soccer")%></a></li>
-                        <li class="subitem2"><a href="error.jsp"><%=map.get("tt")%></a></li>
-                        <li class="subitem3"><a href="error.jsp"><%=map.get("badminton")%></a></li>
-                        <li class="subitem3"><a href="error.jsp"><%=map.get("tenis")%></a></li>
-                        <li class="subitem3"><a href="error.jsp"><%=map.get("danger")%></a></li>
-                        <li class="subitem3"><a href="error.jsp"><%=map.get("swim")%></a></li>
-                    </ul>
+                </li>                
+                <li class="item4"><a href="bmwlifestyle.jsp"><%=map.get("bmwlife")%></a>                    
                 </li>
             </ul>
         </div>
@@ -531,12 +498,12 @@
             });
         </script>
         <div class=" chain-grid menu-chain">
-            <a href="view.jsp?productId=<%=products.get(8).getProductId()%>"><img class="img-responsive chain" src="images/P009.jpg" alt=" " /></a>	   		     		
+            <a href="view.jsp?productId=<%=products.get(8).getProductId()%>"><img class="img-responsive chain" src="images/P009.jpeg" alt=" " /></a>	   		     		
             <div class="grid-chain-bottom chain-watch"><h6>
-                    <a href="view.jsp?productId=<%=products.get(8).getProductId()%>">
-                        <%=map.get(products.get(8).getProductName())%></a></h6>
-                <span class="actual dolor-left-grid">300.000.000<%=map.get("money")%></span>
-                <span class="reducedfrom">500.000.000<%=map.get("money")%></span>
+                    <a href="#">
+                        BMW i8</a></h6>
+                <span class="actual dolor-left-grid">7.000.000.000<%=map.get("money")%></span>
+                <span class="reducedfrom">10.000.000.000<%=map.get("money")%></span>
             </div>
         </div>
         <a class=" all-product" href="error.jsp"><%=map.get("view_all")%><span> </span></a> 	
@@ -590,14 +557,35 @@
                 </ul>	
                 <ul class="location">
                     <li><span class="glyphicon glyphicon-envelope"></span></li>
-                    <li><a href="error.jsp">ecommerce@hcmiu.edu.vn.com</a></li>
+                    <li><a href="error.jsp">thanhgay69@gmail.com</a></li>          
+                    <div id="map"></div>
+    <script>
+      function initMap() {
+        var uluru = {lat: 10.87771, lng: 106.801687};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 16,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCSfDBZibQieX2-z2mM0kfpum2cRCJHnWc&callback=initMap">
+    </script>
+    
                     <div class="clearfix"></div>
-                </ul>						
+                </ul>                    
             </div>
             <div class="clearfix"></div>
+            
         </div>						
     </div>	
+                    
 </div>	
+                    
 </body>
 </html>
 <%}%>   

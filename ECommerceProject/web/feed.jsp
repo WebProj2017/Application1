@@ -24,6 +24,11 @@
 %>
 <html>
     <head>
+         <style>
+       #map {
+        height: 200px;
+        width: 200px;
+       }</style>
         <link rel="icon" href="images/BMW.ico">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="ContentType" content="text/html" charset="utf-8"/>
@@ -60,8 +65,8 @@
                     </div>
                     <div class="top-header-right">
                         <ul class="support">
-                            <li><a href="language?lang=vi">Tiếng Việt</a><a href="#">|</a> 
-                            <li><a href="language?lang=en">English</a>
+                            <li><a href="language?lang=vi"><img src="images/Vietnam_flag.png" alt=""/> Tiếng Việt</a><a href="#">|</a>                                 
+                            <li><a href="language?lang=en"><img src="images/US_flag.png" alt=""/>English</a>              
                         </ul>        
                     </div>
                 </div>
@@ -75,7 +80,7 @@
         <div class="container">
             <div class="col-sm-3 header-bottom-left">
                 <div class="logo">
-                    <a href="index.jsp">E-<span>COMMERCE</span></a>
+                    <a href="index.jsp"><img src="images/BMWLogo.jpeg" alt=""/></a>
                 </div>
                 <div class="search">
                     <input type="text" value="" placeholder="<%=map.get("place_holder")%>" 
@@ -283,20 +288,21 @@
         <b>Họ và tên:</b>  <input type="text" name="nameF"><br>
         <b>Số điện thoại:</b>  <input type="text" name="fonoF"><br>
         <b>Email:</b>  <input type="text" name="mailF"><br>
-        <b>Bạn đã mua sản phẩm nào của E-commerce ?</b> <br>
-        <input type="radio" name="use" value="phone">  Điện thoại<br>
-        <input type="radio" name="use" value="tablet">  Máy tính bảng <br>
-        <input type="radio" name="use" value="tv">  TV <br>
-        <input type="radio" name="use" value="lap">  Máy tính xách tay<br>
-        <input type="radio" name="use" value="none">  Tôi chưa mua hàng ở E-commerce <br> 
+        <b>Bạn đã mua sản phẩm nào của BMW ?</b> <br>
+        <input type="radio" name="use" value="3s">  3 series<br>
+        <input type="radio" name="use" value="5s">  5 series <br>
+        <input type="radio" name="use" value="7s">  7 series <br>
+        <input type="radio" name="use" value="suv">  SUV<br>
+        <input type="radio" name="use" value="m">  M series<br>
+        <input type="radio" name="use" value="none">  Tôi chưa mua hàng ở BMW International <br> 
         <b>Bạn muốn nhận xét về mục nào?</b> 
         <select name="sub">
-            <option value="gen">Tổng quát về E-commerce</option>
-            <option value="phone">Sản phẩm điện thoại</option>
-            <option value="lap">Sản phẩm laptop</option>
-            <option value="tab">Sản phẩm máy tính bảng</option>
-            <option value="tv">Sản phẩm TV</option>
-            <option value="serv">Các sản phẩm dịch vụ</option>
+            <option value="gen">Tổng quát về BMW International</option>
+            <option value="7s">3 series</option>
+            <option value="5s">5 serries</option>
+            <option value="7s">7 series</option>
+            <option value="suv">SUV</option>
+            <option value="m">M series</option>
         </select> <br>
         <textarea name="feed" rows="7" cols="70">Xin hãy viết nhận xét của bạn ở đây</textarea>
         <input type="submit" value="Gửi">
@@ -351,7 +357,24 @@
                 </ul>	
                 <ul class="location">
                     <li><span class="glyphicon glyphicon-envelope"></span></li>
-                    <li><a href="error.jsp">ecommerce@hcmiu.edu.vn.com</a></li>
+                    <li><a href="error.jsp">thanhgay69@gmail.com</a></li>          
+                    <div id="map"></div>
+    <script>
+      function initMap() {
+        var uluru = {lat: 10.87771, lng: 106.801687};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 16,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCSfDBZibQieX2-z2mM0kfpum2cRCJHnWc&callback=initMap">
+    </script>
                     <div class="clearfix"></div>
                 </ul>						
             </div>
