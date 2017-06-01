@@ -22,6 +22,12 @@
 %>
 <html>
     <head>
+        <style>
+       #map {
+        height: 200px;
+        width: 200px;
+       }
+    </style>
         <link rel="icon" href="images/BMW.ico">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="ContentType" content="text/html" charset="utf-8"/>
@@ -290,7 +296,7 @@
                 if(res){
                        $("#email-error").html('Email đã tồn tại trong database');
                        return false;
-                }
+                }   
                 
                 return true;
             }
@@ -598,14 +604,35 @@
                 </ul>	
                 <ul class="location">
                     <li><span class="glyphicon glyphicon-envelope"></span></li>
-                    <li><a href="error.jsp">thanhgay69@gmail.com</a></li>
+                    <li><a href="error.jsp">thanhgay69@gmail.com</a></li>          
+                    <div id="map"></div>
+    <script>
+      function initMap() {
+        var uluru = {lat: 10.87771, lng: 106.801687};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 16,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCSfDBZibQieX2-z2mM0kfpum2cRCJHnWc&callback=initMap">
+    </script>
+    
                     <div class="clearfix"></div>
-                </ul>						
+                </ul>                    
             </div>
             <div class="clearfix"></div>
+            
         </div>						
     </div>	
+                    
 </div>	
+                    
 </body>
 </html>
 <%}%>   
