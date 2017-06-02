@@ -60,14 +60,14 @@ public class AccountRepository {
 
     private static String getMailContent(String accountId) {
         String content = "Dear " + getCustomerName(accountId) + ","
-                + "\n\nThank for your registration to our E-Commerce."
+                + "\n\nThank for your registration to our BMW International Service."
                 + " Your account has been qualified for activation by the administrators of the website."
                 + "Congratulations!!!\n\n"
                 + "However, you need to do one more step to make your account valid."
                 + " Click to the link below and then log in to the system. That is all for your validation."
                 + "\nhttp://localhost:" + Constant.getServerPort() + "/ECommerceProject/" + ADDRESS_CONTENT + "?" + PARAMETER_CONTENT
                 + "="+accountId
-                + "\n\nBest regards, \nE-Commerce Team.";
+                + "\n\nBest regards, \nBMW International.";
         return content;
     }
 }

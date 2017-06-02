@@ -19,8 +19,8 @@ import javax.mail.internet.MimeMessage;
 
 public class MailService {
 
-    private static final String REPLY_TO = "no_reply@ecommercebook2016.com";
-    private static final String SUB_SUBJECT = "E-Commerce Communication";
+    private static final String REPLY_TO = "no_reply@bmw.com";
+    private static final String SUB_SUBJECT = "BMW International";
     private static final String MAIL_ADDRESS = "ecommercebook2016@gmail.com";
     private static final String MAIL_PASSWORD = "3c0mm3rc3b00k2k16";
 
